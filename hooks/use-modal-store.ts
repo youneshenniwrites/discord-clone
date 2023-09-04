@@ -10,16 +10,16 @@ export type ModalType =
   | "leaveServer"
   | "deleteServer"
   | "deleteChannel"
-  | "editChannel";
-// | "messageFile"
+  | "editChannel"
+  | "messageFile";
 // | "deleteMessage";
 
 type ModalData = {
   server?: Server;
   channel?: Channel;
   channelType?: ChannelType;
-  // apiUrl?: string;
-  // query?: Record<string, any>;
+  apiUrl?: string;
+  query?: Record<string, any>;
 };
 
 type ModalStore = {
