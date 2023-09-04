@@ -10,9 +10,9 @@ import Picker from "@emoji-mart/react";
 import { Smile } from "lucide-react";
 import { useTheme } from "next-themes";
 
-interface EmojiPickerProps {
+type EmojiPickerProps = {
   onChange: (value: string) => void;
-}
+};
 
 export const EmojiPicker = ({ onChange }: EmojiPickerProps) => {
   const { resolvedTheme } = useTheme();
